@@ -1,0 +1,21 @@
+@mixin radius($value...) {
+    -webkit-border-radius: $value;
+    border-radius: $value;
+}
+@mixin borderBox {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin transition($value...) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+@mixin transform($value...) {
+    -webkit-transform: $value;
+    transform: $value;
+}
+@mixin bg_size($value...) {
+    -webkit-background-size: $value;
+    background-size: $value;
+}
