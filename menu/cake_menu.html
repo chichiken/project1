@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 홀케이크 메뉴 : 투썸플레이스 </title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="apple-touch-icon" href="../assets/images/common/favicon-32x32.png"><!-- 아이폰 전용 -->
+    <link rel="shortcut icon" href="../assets/images/common/favicon-32x32.png"><!-- 안드로이드폰 전용 -->
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/common/logo.jpg" alt="투썸플레이스">
+                </a>
+            </h1>
+            <button class="btn_menu">
+                <span class="sr-only">메뉴 열기</span>
+                <span class="line top"></span>
+                <span class="line mid"></span>
+                <span class="line btm"></span>
+            </button>
+            <div id="dim"></div>
+            <nav id="gnb">
+                <h2 class="sr-only">주메뉴</h2>
+                <div class="gnb_sign">
+                    <a href="" data-link="first">로그인</a>
+                    <a href="">회원가입</a>
+                </div>
+                <form id="navSearch" action="">
+                    <label class="sr-only" for="navSearchTxt">검색어 입력</label>
+                    <input id="navSearchTxt" type="text" placeholder="검색어를 입력해주세요.">
+                    <button class="find_bt">
+                        <img src="../assets/images/icon/search.png" alt="검색"
+                            srcset="../assets/images/icon/searchx2.png 2x, ../assets/images/icon/searchx3.png 3x">
+                    </button>
+                </form>
+                <ul class="gnb_menu">
+                    <li>
+                        <a href="">브랜드 스토리</a>
+                        <ul>
+                            <li><a href="">브랜드 이야기</a></li>
+                            <li><a href="">커피 이야기</a></li>
+                            <li><a href="">디저트 이야기</a></li>
+                            <li><a href="">브랜드 필름</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">메뉴</a>
+                        <ul>
+                            <li><a href="">NEW</a></li>
+                            <li><a href="">커피&amp;음료</a></li>
+                            <li><a href="">디저트</a></li>
+                            <li><a href="">델리</a></li>
+                            <li><a href="">상품</a></li>
+                            <li><a href="">홀케이크</a></li>
+                            <li><a href="">영양성분표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">이벤트</a>
+                        <ul>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">매장별 이벤트</a></li>
+                            <li><a href="">멤버십&amp;제휴카드</a></li>
+                            <li><a href="">케이크 클래스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">가맹정보</a>
+                        <ul>
+                            <li><a href="">창업정보 및 절차</a></li>
+                            <li><a href="">온라인 창업상담</a></li>
+                            <li><a href="">정보공개서</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">가맹점 전용 금융상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" data-link="last">기타목록</a>
+                        <ul>
+                            <li><a href="">매장찾기</a></li>
+                            <li><a href="">투썸 앱 소개</a></li>
+                            <li><a href="">창업설명회</a></li>
+                            <li><a href="">에스프레소 스탠드</a></li>
+                            <li><a href="">기업 및 단체구매 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="cakemenu_content">
+            <article class="sub_first">
+                <div>
+                    <h2 class="sub_h2">MENU</h2>
+                    <p>투썸에서만 만날 수 있는 특별하고 다양한 케이크</p>
+                </div>
+                <ul>
+                    <h2>홀케이크</h2>
+                    <li>
+                        <a href="">전체</a>
+                    </li>
+                    <li>
+                        <a href="">무스</a>
+                    </li>
+                    <li>
+                        <a href="">생크림</a>
+                    </li>
+                </ul>
+                <img src="../assets/images/cake/bg_cake2.jpg" alt="...">
+                <form id="cakeSearch" action="">
+                    <label class="sr-only" for="cakeSearchTxt">검색어 입력</label>
+                    <input id="cakeSearchTxt" type="text" placeholder="제품명 혹은 종류를 검색해주세요.">
+                    <button class="find_bt">
+                        <img src="../assets/images/icon/search.png" alt="검색"
+                            srcset="../assets/images/icon/searchx2.png 2x, ../assets/images/icon/searchx3.png 3x">
+                    </button>
+                </form> 
+            </article>
+            
+            <article class="sub_second">
+                <ul class="cake_array">
+                    <h2 class="sr-only">정렬 순서</h2>
+                    <li>
+                        <a href="">최근 메뉴순</a>
+                    </li>
+                    <li>
+                        <a href="">인기순</a>
+                    </li>
+                    <li>
+                        <a href="">이름순</a>
+                    </li>
+                </ul>
+                <div class="pro_menu">
+                    <a href="">
+                        <img src="../assets/images/cake/menu_cake1.jpg" alt="" srcset="../assets/images/cake/menu_cake1x2.jpg 2x, ../assets/images/cake/menu_cake1x3.jpg 3x">
+                        <p>리얼 생크림 2호</p>
+                    </a>
+                </div>
+                <div class="pro_menu">
+                    <a href="">
+                        <img src="../assets/images/cake/menu_cake2.jpg" alt="" srcset="../assets/images/cake/menu_cake2x2.jpg 2x, ../assets/images/cake/menu_cake2x3.jpg 3x">
+                        <p>벨지안 멜팅 가나슈</p>
+                    </a>
+                </div>
+                <div class="pro_menu">
+                    <a href="">
+                        <img src="../assets/images/cake/menu_cake3.jpg" alt="" srcset="../assets/images/cake/menu_cake3x2.jpg 2x, ../assets/images/cake/menu_cake3x3.jpg 3x">
+                        <p>스트로베리 초콜릿 생크림 케이크</p>
+                    </a>
+                </div>
+                <div class="pro_menu">
+                    <a href="">
+                        <img src="../assets/images/cake/menu_cake4.jpg" alt="" srcset="../assets/images/cake/menu_cake4x2.jpg 2x, ../assets/images/cake/menu_cake4x3.jpg 3x">
+                        <p>레드 벨벳</p>
+                    </a>
+                </div>
+                <div class="pro_menu">
+                    <a href="">
+                        <img src="../assets/images/cake/menu_cake5.jpg" alt="" srcset="../assets/images/cake/menu_cake5x2.jpg 2x, ../assets/images/cake/menu_cake5x3.jpg 3x">
+                        <p>그뤼에즈 치즈 무스 케이크</p>
+                    </a>
+                </div>
+                <div class="pro_menu">
+                    <a href="">
+                        <img src="../assets/images/cake/menu_cake6.jpg" alt="" srcset="../assets/images/cake/menu_cake6x2.jpg 2x, ../assets/images/cake/menu_cake6x3.jpg 3x">
+                        <p>초코 쉬폰</p>
+                    </a>
+                </div>
+            </article>
+        </section>
+    
+        <footer id="footer">
+            <div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="../assets/images/icon/idx_foot_1.png" alt="..."
+                                srcset="../assets/images/icon/idx_foot_1x2.png 2x, ../assets/images/icon/idx_foot_1x3.png 3x">
+                            <span>페이스북</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/images/icon/idx_foot_2.png" alt="..."
+                                srcset="../assets/images/icon/idx_foot_2x2.png 2x, ../assets/images/icon/idx_foot_2x3.png 3x">
+                            <span>인스타그램</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/images/icon/idx_foot_3.png" alt="..."
+                                srcset="../assets/images/icon/idx_foot_3x2.png 2x, ../assets/images/icon/idx_foot_3x3.png 3x">
+                            <span>멤버십</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="../assets/images/icon/idx_foot_4.png" alt="..."
+                                srcset="../assets/images/icon/idx_foot_4x2.png 2x, ../assets/images/icon/idx_foot_4x3.png 3x">
+                            <span>제휴카드</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../assets/images/icon/idx_foot_5.png" alt="..."
+                                srcset="../assets/images/icon/idx_foot_5x2.png 2x, ../assets/images/icon/idx_foot_5x3.png 3x">
+                            <span>온라인결제</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>서울특별시 중구 을지로 170, 8층 <br>고객센터 : 1577-4410 <br>팩스 : (02)2058-6777 <br>대표이메일 : twosomemaster@cj.net</p>
+                <address>Copyright ⓒ 2020 A TWOSOME PLACE <br>ALL RIGHTS RESERVED.</address>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

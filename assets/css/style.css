@@ -10,6 +10,9 @@
   color: #fff; }
 
 /* slider */
+#idx_content {
+  padding-top: 50px; }
+
 /* brand story */
 .brand_story {
   -webkit-background-size: cover;
@@ -91,5 +94,56 @@
       text-align: center; }
 
 /* news */
+.news {
+  width: 100%;
+  height: 8.5%;
+  padding-bottom: 8%;
+  color: #fff;
+  background: linear-gradient(135deg, #ea3858 2%, #ca1a37 99%); }
+  .news .idx_h2 {
+    padding-bottom: 5%; }
+  .news ul {
+    width: 18.5em;
+    margin: 0 auto; }
+  .news ul li .newstit {
+    width: 12.5em;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .news ul li .newsdate {
+    float: right; }
+
+/* sub */
+/* common */
+.sub_h2 {
+  font-family: Libre;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 4.4px;
+  text-align: center;
+  padding: 1em 0 0.5em 0;
+  color: #fff; }
+
+/* #cakemenu_content */
+#cakemenu_content {
+  width: 100%;
+  padding-top: 50px; }
+
+/* .sub_first */
+.sub_first > div {
+  background: url("../images/cake/bg_cake.jpg") no-repeat top center; }
+  .sub_first > div p {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    padding-bottom: 3.7em; }
+.sub_first > ul {
+  width: 15em;
+  margin: 0 auto;
+  background: aqua; }
+
+/* .sub_second */
 
 /*# sourceMappingURL=style.css.map */

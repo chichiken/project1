@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "_var", "_mixin";
+@import "_mixin";
 @font-face{
     font-family: NTSans;
     font-weight: 300;
@@ -63,6 +63,7 @@ input[type="text"]{border: none; background: none; font-family: inherit; padding
 .clearfix::after{content: ""; display: block; clear: both;}
 .sr-only{position: absolute; top: 0; left: -9999px;}
 .c_ca1a37{color: #ca1a37 !important;}
+.fade{opacity: 0;}
 
 body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter-spacing: -0.2px; word-break: keep-all;}
 #wrap{min-width: 320px;}

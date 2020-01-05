@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    $(window).scroll(function (){
+        $('.fade').each(function (){
+            var tihsBtm = $(this).offset().top + $(this).outerHeight();
+            var winBtm = $(window).scrollTop() + $(window).height();
+            if( tihsBtm > winBtm/2 ){
+                $(this).animate({'opacity': 1}, 800);
+            };
+        }); 
+    });
+
+    //navigator
     var $gnb = $('#gnb');
 
     $('.btn_menu').on('click', function () {
