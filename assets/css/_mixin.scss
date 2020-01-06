@@ -16,8 +16,8 @@
     transform: $value;
 }
 @mixin bg_size($value...) {
-    -webkit-background-size: $value;
-    background-size: $value;
+    -webkit-background-size: $value !important;
+    background-size: $value !important;
 }
 @mixin boxShadow($value...) {
     -webkit-box-shadow: $value;

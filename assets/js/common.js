@@ -3,7 +3,7 @@ $(document).ready(function () {
         $('.fade').each(function (){
             var tihsBtm = $(this).offset().top + $(this).outerHeight();
             var winBtm = $(window).scrollTop() + $(window).height();
-            if( tihsBtm > winBtm/2 ){
+            if( tihsBtm > winBtm/3 ){
                 $(this).animate({'opacity': 1}, 800);
             };
         }); 
