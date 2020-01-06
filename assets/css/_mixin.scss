@@ -19,3 +19,7 @@
     -webkit-background-size: $value;
     background-size: $value;
 }
+@mixin boxShadow($value...) {
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
+}

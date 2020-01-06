@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "_mixin";
 
+#wrap{max-width: 1080px;}
 /* index */
     /* common */
     .idx_h2{font-family: Libre; font-size: 25px; font-weight: 700; letter-spacing: 5px; text-align: center; padding-top: 8%; color: #fff;}
@@ -8,6 +9,7 @@
     /* slider */
     #idx_content{
         padding-top: 50px;
+        .swiper-button-prev, .swiper-button-next{top: 55%; width: 1em; height: 1em; overflow: hidden; display: inline-block;}
     }
 
     /* brand story */
@@ -68,7 +70,6 @@
     }
 
 /* sub */
-
     /* common */
     .sub_h2{font-family: Libre; font-weight: 700; font-size: 22px; letter-spacing: 4.4px; text-align: center; padding: 1em 0 0.5em 0; color: #fff;}
 
@@ -77,13 +78,51 @@
 
         /* .sub_first */
         .sub_first{
+            text-align: center;
             > div{
                 background: url("../images/cake/bg_cake.jpg") no-repeat top center;
-                p{text-align: center; color: #fff; font-weight: 300; font-size: 13px; padding-bottom: 3.7em;}
+                p{color: #fff; font-weight: 300; font-size: 13px; padding-bottom: 3.7em;}
             }
             > ul{
-                width: 15em; margin: 0 auto; background: aqua;
+                top: 6em; left: 3.5em; width: 15em; font-size: 16.5px; font-weight: 500; background: #fff; -webkit-box-shadow: 0 3px 8px #0000001a; box-shadow: 0 3px 8px #0000001a; z-index: 800;
+                h2{font-weight: 700; font-size: 25px; padding: 0.3em 0; color: #ca1a37;}
+                li:nth-child(2) a{display: block; padding: 0.5em 0; color: #d58d3f; background: #e9e9e9;}
+                li.f_l a{display: inline-block; width: 7.5em; padding: 0.5em 0}
+            }
+            > .cake_bg{position: absolute; width: 268px; height: 259px; top: 12em; right: 12em; z-index: -100; background: url("../images/cake/bg_cake2.jpg") no-repeat;}
+            #cakeSearch{
+                margin-top: 10em; padding: 2em 0; background: url("../images/cake/bg_search.jpg") no-repeat -2em 0 #ca1a37;
+                .search_wrap{
+                    width: 16.7em; padding-bottom: 0.3em; border-bottom: 1px solid #fff; margin: 0 auto;
+                    #cakeSearchTxt{width: 13.8em; font-size: 16px;}
+                }
             }
         }
 
         /* .sub_second */
+        .sub_second{
+            width: 100%;
+            .cake_array{
+                width: 16.5em; margin: 0 auto; padding-top: 2.5em; text-align: center;
+                li:nth-child(2){border-left: none; font-weight: 700px;}
+                li{float: left; padding: 0 1em; border-left: 1px solid #aaa;}
+                &::after{content: ""; position: absolute; top: 0; left: -50%; width: 100%; height: 100px; background: #fff; z-index: -50;}
+            }
+            .pro_menu{
+                text-align: center; font-weight: 500;
+                li{
+                    margin: 2.5em 0 0 0.65em; float: left; border: 1px solid #ddd; -webkit-box-shadow: 0 3px 5px #0000001a; box-shadow: 0 3px 5px #0000001a;
+                    p{height: 4.5em; line-height: 4.5em;}
+                    p.menu_lh2{
+                        line-height: 1.5em; padding: 0.8em; box-sizing: border-box;
+                    }
+                }
+            }
+            .cake_more{
+                width: 100%; text-align: center; margin-top: 2.5em;
+                button{
+                    @include radius(5em);
+                    font-family: NTSans; font-weight: 500; color: #ca1a37; padding: 1em 2em; border: 2px solid #ca1a37;
+                }
+            }
+        }

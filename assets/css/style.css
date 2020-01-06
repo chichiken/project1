@@ -1,3 +1,6 @@
+#wrap {
+  max-width: 1080px; }
+
 /* index */
 /* common */
 .idx_h2 {
@@ -12,6 +15,12 @@
 /* slider */
 #idx_content {
   padding-top: 50px; }
+  #idx_content .swiper-button-prev, #idx_content .swiper-button-next {
+    top: 55%;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    display: inline-block; }
 
 /* brand story */
 .brand_story {
@@ -131,19 +140,111 @@
   padding-top: 50px; }
 
 /* .sub_first */
-.sub_first > div {
-  background: url("../images/cake/bg_cake.jpg") no-repeat top center; }
-  .sub_first > div p {
-    text-align: center;
-    color: #fff;
-    font-weight: 300;
-    font-size: 13px;
-    padding-bottom: 3.7em; }
-.sub_first > ul {
-  width: 15em;
-  margin: 0 auto;
-  background: aqua; }
+.sub_first {
+  text-align: center; }
+  .sub_first > div {
+    background: url("../images/cake/bg_cake.jpg") no-repeat top center; }
+    .sub_first > div p {
+      color: #fff;
+      font-weight: 300;
+      font-size: 13px;
+      padding-bottom: 3.7em; }
+  .sub_first > ul {
+    top: 6em;
+    left: 3.5em;
+    width: 15em;
+    font-size: 16.5px;
+    font-weight: 500;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 8px #0000001a;
+    box-shadow: 0 3px 8px #0000001a;
+    z-index: 800; }
+    .sub_first > ul h2 {
+      font-weight: 700;
+      font-size: 25px;
+      padding: 0.3em 0;
+      color: #ca1a37; }
+    .sub_first > ul li:nth-child(2) a {
+      display: block;
+      padding: 0.5em 0;
+      color: #d58d3f;
+      background: #e9e9e9; }
+    .sub_first > ul li.f_l a {
+      display: inline-block;
+      width: 7.5em;
+      padding: 0.5em 0; }
+  .sub_first > .cake_bg {
+    position: absolute;
+    width: 268px;
+    height: 259px;
+    top: 12em;
+    right: 12em;
+    z-index: -100;
+    background: url("../images/cake/bg_cake2.jpg") no-repeat; }
+  .sub_first #cakeSearch {
+    margin-top: 10em;
+    padding: 2em 0;
+    background: url("../images/cake/bg_search.jpg") no-repeat -2em 0 #ca1a37; }
+    .sub_first #cakeSearch .search_wrap {
+      width: 16.7em;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid #fff;
+      margin: 0 auto; }
+      .sub_first #cakeSearch .search_wrap #cakeSearchTxt {
+        width: 13.8em;
+        font-size: 16px; }
 
 /* .sub_second */
+.sub_second {
+  width: 100%; }
+  .sub_second .cake_array {
+    width: 16.5em;
+    margin: 0 auto;
+    padding-top: 2.5em;
+    text-align: center; }
+    .sub_second .cake_array li:nth-child(2) {
+      border-left: none;
+      font-weight: 700px; }
+    .sub_second .cake_array li {
+      float: left;
+      padding: 0 1em;
+      border-left: 1px solid #aaa; }
+    .sub_second .cake_array::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 100%;
+      height: 100px;
+      background: #fff;
+      z-index: -50; }
+  .sub_second .pro_menu {
+    text-align: center;
+    font-weight: 500; }
+    .sub_second .pro_menu li {
+      margin: 2.5em 0 0 0.65em;
+      float: left;
+      border: 1px solid #ddd;
+      -webkit-box-shadow: 0 3px 5px #0000001a;
+      box-shadow: 0 3px 5px #0000001a; }
+      .sub_second .pro_menu li p {
+        height: 4.5em;
+        line-height: 4.5em; }
+      .sub_second .pro_menu li p.menu_lh2 {
+        line-height: 1.5em;
+        padding: 0.8em;
+        box-sizing: border-box; }
+  .sub_second .cake_more {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5em; }
+    .sub_second .cake_more button {
+      -webkit-border-radius: 5em;
+      border-radius: 5em;
+      font-family: NTSans;
+      font-weight: 500;
+      color: #ca1a37;
+      padding: 1em 2em;
+      border: 2px solid #ca1a37; }
 
 /*# sourceMappingURL=style.css.map */
