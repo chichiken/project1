@@ -93,6 +93,12 @@ input[type="text"] {
 .fade {
   opacity: 0; }
 
+.fadeInLeft {
+  animation: fadeInLeft; }
+
+.fadeInRight {
+  animation: fadeInRight; }
+
 body {
   font-family: NTSans;
   font-weight: 400;
@@ -294,5 +300,30 @@ body {
     line-height: 150%; }
     #footer div:nth-child(2) address {
       margin-top: 5%; }
+
+/* css animation */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.fadeInRight.on {
+  animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.fadeInLeft.on {
+  animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
 /*# sourceMappingURL=common.css.map */
