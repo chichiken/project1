@@ -64,6 +64,8 @@ input[type="text"]{border: none; background: none; font-family: inherit; padding
 .sr-only{position: absolute; top: 0; left: -9999px;}
 .c_ca1a37{color: #ca1a37 !important;}
 .fade{opacity: 0;}
+.fadeInLeft{animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
+.fadeInRight{animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 
 body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter-spacing: -0.2px; word-break: keep-all;}
 #wrap{min-width: 320px;}
@@ -146,19 +148,57 @@ body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter
 /* footer */
 #footer{
     width: 100%;
-    div:nth-child(1){padding-top: 8%; padding-bottom: 8%;}
+    div:nth-child(1){padding: 2em 0 1em}
     ul{
-        &:nth-child(1){width: 75%;}
-        &:nth-child(2){width: 50%; margin-top: 7%;}
-        margin: 0 auto;
+        &:nth-child(1){width: 200px; margin: 0 calc(50% - (200px / 2)) 5%;}
+        &:nth-child(2){width: 133px; margin: 0 calc(50% - (133px / 2)) 5%;}
+        margin: 0 auto; text-align: center;
         li{
-            float: left; margin-left: 7%;
-            a{display: inline-block; width: 100%; text-align: center;}
+            float: left; margin-right: 5%;
+            a{display: inline-block;}
             span{display: block;}
+            &:last-child{margin-right: 0 !important;}
         }
     }
     div:nth-child(2){
-        font-size: 85%; color: #8a8080; background: #f0ece8; padding-top: 8%; padding-bottom: 8%; text-align: center; line-height: 150%;
+        font-size: 85%; color: #8a8080; background: #f0ece8; padding-top: 2em; padding-bottom: 2em; text-align: center; line-height: 150%;
         address{margin-top: 5%;}
     }
 }
+
+/* css animation */
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(30%, 0, 0);
+      transform: translate3d(30%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .fadeInRight.on{  // 스크롤 애니메이션
+    animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+  }  
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-30%, 0, 0);
+      transform: translate3d(-30%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInLeft.on{   // 스크롤 애니메이션
+    animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+  }

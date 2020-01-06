@@ -93,6 +93,12 @@ input[type="text"] {
 .fade {
   opacity: 0; }
 
+.fadeInLeft {
+  animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+
+.fadeInRight {
+  animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+
 body {
   font-family: NTSans;
   font-weight: 400;
@@ -265,33 +271,59 @@ body {
 #footer {
   width: 100%; }
   #footer div:nth-child(1) {
-    padding-top: 8%;
-    padding-bottom: 8%; }
+    padding: 2em 0 1em; }
   #footer ul {
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
     #footer ul:nth-child(1) {
-      width: 75%; }
+      width: 200px;
+      margin: 0 calc(50% - (200px / 2)) 5%; }
     #footer ul:nth-child(2) {
-      width: 50%;
-      margin-top: 7%; }
+      width: 133px;
+      margin: 0 calc(50% - (133px / 2)) 5%; }
     #footer ul li {
       float: left;
-      margin-left: 7%; }
+      margin-right: 5%; }
       #footer ul li a {
-        display: inline-block;
-        width: 100%;
-        text-align: center; }
+        display: inline-block; }
       #footer ul li span {
         display: block; }
+      #footer ul li:last-child {
+        margin-right: 0 !important; }
   #footer div:nth-child(2) {
     font-size: 85%;
     color: #8a8080;
     background: #f0ece8;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align: center;
     line-height: 150%; }
     #footer div:nth-child(2) address {
       margin-top: 5%; }
+
+/* css animation */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.fadeInRight.on {
+  animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.fadeInLeft.on {
+  animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
 /*# sourceMappingURL=common.css.map */
