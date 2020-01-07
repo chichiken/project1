@@ -7,7 +7,7 @@
 
     /* slider */
     .idx_slide{
-        max-width: 425px; padding-top: 50px; margin: 0 auto;
+        max-width: 360px; padding-top: 50px; margin: 0 auto;
         .swiper-slide{text-align: center;}
         .swiper-button-prev, .swiper-button-next{top: 55%; width: 1em; height: 1em; overflow: hidden; display: inline-block;}
     }
@@ -31,7 +31,7 @@
 
     /* menu */
     .idx_menu{
-        max-width: 425px; width: 100%; margin: 0 auto; overflow: hidden;
+        width: 100%; margin: 0 auto; overflow: hidden;
         .idx_h2{padding-bottom: 8%;}
         ul li{
             display: block; position: relative;

@@ -63,7 +63,7 @@ input[type="text"]{border: none; background: none; font-family: inherit; padding
 .clearfix::after{content: ""; display: block; clear: both;}
 .sr-only{position: absolute; top: 0; left: -9999px;}
 .c_ca1a37{color: #ca1a37 !important;}
-.fade, .fade2{opacity: 0;}
+.fade{opacity: 0;}
 .fadeInLeft{animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 .fadeInRight{animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 
