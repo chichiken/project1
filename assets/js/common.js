@@ -12,7 +12,7 @@ $(document).ready(function () {
         $('.fade2').each(function (){
             var tihsBtm = $(this).offset().top + $(this).outerHeight();
             var winBtm = $(window).scrollTop() + $(window).height();
-            if( tihsBtm > winBtm/1.5 ){
+            if( tihsBtm > winBtm/1.3 ){
                 $(this).animate({'opacity': 1}, 1000);
             };
         }); 

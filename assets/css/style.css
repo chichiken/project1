@@ -363,7 +363,8 @@
 #creamNum1_content .menu_sub_inpo .inpo_efc2 {
   display: none; }
   #creamNum1_content .menu_sub_inpo .inpo_efc2 > li p {
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    font-size: 14px; }
   #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul {
     max-width: 320px;
     width: 100%;
