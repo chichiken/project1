@@ -4,7 +4,16 @@ $(document).ready(function () {
             var tihsBtm = $(this).offset().top + $(this).outerHeight();
             var winBtm = $(window).scrollTop() + $(window).height();
             if( tihsBtm > winBtm/3 ){
-                $(this).animate({'opacity': 1}, 800);
+                $(this).animate({'opacity': 1}, 1000);
+            };
+        }); 
+    });
+    $(window).scroll(function (){
+        $('.fade2').each(function (){
+            var tihsBtm = $(this).offset().top + $(this).outerHeight();
+            var winBtm = $(window).scrollTop() + $(window).height();
+            if( tihsBtm > winBtm/1.5 ){
+                $(this).animate({'opacity': 1}, 1000);
             };
         }); 
     });
