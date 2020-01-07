@@ -7,7 +7,7 @@
 
     /* slider */
     .idx_slide{
-        max-width: 440px; padding-top: 50px; margin: 0 auto;
+        max-width: 360px; padding-top: 50px; margin: 0 auto;
         .swiper-slide{text-align: center;}
         .swiper-button-prev, .swiper-button-next{top: 55%; width: 1em; height: 1em; overflow: hidden; display: inline-block;}
     }
@@ -31,7 +31,7 @@
 
     /* menu */
     .idx_menu{
-        max-width: 420px; width: 100%; margin: 0 auto;
+        width: 100%; margin: 0 auto; overflow: hidden;
         .idx_h2{padding-bottom: 8%;}
         ul li{
             display: block; position: relative;
@@ -135,6 +135,7 @@
                 button{
                     @include radius(5em);
                     font-family: NTSans; font-weight: 500; color: #ca1a37; padding: 1em 2em; border: 2px solid #ca1a37;
+                    &:hover{background: #ca1a37; color: #fff;}
                 }
             }
         }
@@ -142,7 +143,7 @@
     /* menu inpo */
         /* sub_first */
         #creamNum1_content{
-            width: 100%; padding-top: 50px;
+            width: 100%; padding-top: 50px; text-align: center;
         }
         #creamNum1_content .sub_first{
             .debth1{background-image: url("../images/cake/bg_cake.jpg");}
@@ -158,5 +159,40 @@
                     &:first-child{margin-right: 0.5em;}
                 }
                 li img{width: 150px;}
+            }
+            .inpo_txt{
+                position: relative; max-width: 450px; font-size: 18px; margin: 0 auto;
+                &::before{content: ""; position: absolute; top: 0.15em; left: 1em; display: block; width: 17px; height: 80px; background: url("../images/cake_m/bg_left.jpg");}
+                &::after{content: ""; position: absolute; top: 0.15em; right: 1em; display: block; width: 17px; height: 80px; background: url("../images/cake_m/bg_right.jpg");}
+            }
+            .inpo_efc{
+                max-width: 320px; margin: 0 auto;
+                li:first-child{float: left; margin: 3em 0.5em 3em 2em;}
+                li:last-child{float: right; margin: 3.5em 2em 3em 0.5em;}
+                li p{
+                    &:first-child{margin-bottom: 1em;}
+                    width: 8.3em; text-align: left;
+                }
+                li button{
+                    @include borderBox;
+                    @include radius(50%);
+                    &:hover{@include transition(all 0.5s); background: #d58d3f; color: #fff;}
+                    width: 6.5rem; height: 6.5rem; border: 3px solid #d58d3f; color: #d58d3f; font-family: NTSans; font-size: 18px; font-weight: 700; margin: auto 0;
+                }
+            }
+            .inpo_efc2{
+                display: none;
+                > li{
+                    p{margin-bottom: 0.5em;}
+                }
+                > ul{max-width: 320px; width: 100%; margin: 2em auto 2em; padding: 1em 0 1em; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
+                > ul li{
+                    @include borderBox;
+                    width: 250px; padding: 0.4em 0; border-bottom: 1px dotted #aaa; margin: 0 auto;
+                    &:last-child{border-bottom: none;}
+                    &::after{content: ""; display: block; clear: both;}
+                    strong{float: left;}
+                    span{float: right;}
+                }
             }
         }

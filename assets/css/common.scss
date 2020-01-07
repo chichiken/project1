@@ -64,8 +64,8 @@ input[type="text"]{border: none; background: none; font-family: inherit; padding
 .sr-only{position: absolute; top: 0; left: -9999px;}
 .c_ca1a37{color: #ca1a37 !important;}
 .fade{opacity: 0;}
-.fadeInLeft{animation: fadeInLeft;}
-.fadeInRight{animation: fadeInRight;}
+.fadeInLeft{animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
+.fadeInRight{animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 
 body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter-spacing: -0.2px; word-break: keep-all;}
 #wrap{min-width: 320px;}
@@ -148,7 +148,7 @@ body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter
 /* footer */
 #footer{
     width: 100%;
-    div:nth-child(1){padding-top: 2em}
+    div:nth-child(1){padding: 2em 0 1em}
     ul{
         &:nth-child(1){width: 200px; margin: 0 calc(50% - (200px / 2)) 5%;}
         &:nth-child(2){width: 133px; margin: 0 calc(50% - (133px / 2)) 5%;}
@@ -170,8 +170,8 @@ body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter
 @keyframes fadeInRight {
     from {
       opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
+      -webkit-transform: translate3d(30%, 0, 0);
+      transform: translate3d(30%, 0, 0);
     }
   
     to {
@@ -188,8 +188,8 @@ body{font-family: NTSans; font-weight: 400; font-size: 15px; color: #555; letter
   @keyframes fadeInLeft {
     from {
       opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
+      -webkit-transform: translate3d(-30%, 0, 0);
+      transform: translate3d(-30%, 0, 0);
     }
   
     to {

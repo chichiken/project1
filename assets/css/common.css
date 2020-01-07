@@ -94,10 +94,10 @@ input[type="text"] {
   opacity: 0; }
 
 .fadeInLeft {
-  animation: fadeInLeft; }
+  animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
 .fadeInRight {
-  animation: fadeInRight; }
+  animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
 
 body {
   font-family: NTSans;
@@ -271,7 +271,7 @@ body {
 #footer {
   width: 100%; }
   #footer div:nth-child(1) {
-    padding-top: 2em; }
+    padding: 2em 0 1em; }
   #footer ul {
     margin: 0 auto;
     text-align: center; }
@@ -305,8 +305,8 @@ body {
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0); }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -317,8 +317,8 @@ body {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0); }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);

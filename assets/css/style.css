@@ -11,7 +11,7 @@
 
 /* slider */
 .idx_slide {
-  max-width: 440px;
+  max-width: 360px;
   padding-top: 50px;
   margin: 0 auto; }
   .idx_slide .swiper-slide {
@@ -53,9 +53,9 @@
 
 /* menu */
 .idx_menu {
-  max-width: 420px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   .idx_menu .idx_h2 {
     padding-bottom: 8%; }
   .idx_menu ul li {
@@ -277,12 +277,16 @@
       color: #ca1a37;
       padding: 1em 2em;
       border: 2px solid #ca1a37; }
+      #cakemenu_content .sub_second .cake_more button:hover {
+        background: #ca1a37;
+        color: #fff; }
 
 /* menu inpo */
 /* sub_first */
 #creamNum1_content {
   width: 100%;
-  padding-top: 50px; }
+  padding-top: 50px;
+  text-align: center; }
 
 #creamNum1_content .sub_first .debth1 {
   background-image: url("../images/cake/bg_cake.jpg"); }
@@ -299,5 +303,89 @@
       margin-right: 0.5em; }
   #creamNum1_content .menu_sub_inpo .inpo_img li img {
     width: 150px; }
+#creamNum1_content .menu_sub_inpo .inpo_txt {
+  position: relative;
+  max-width: 450px;
+  font-size: 18px;
+  margin: 0 auto; }
+  #creamNum1_content .menu_sub_inpo .inpo_txt::before {
+    content: "";
+    position: absolute;
+    top: 0.15em;
+    left: 1em;
+    display: block;
+    width: 17px;
+    height: 80px;
+    background: url("../images/cake_m/bg_left.jpg"); }
+  #creamNum1_content .menu_sub_inpo .inpo_txt::after {
+    content: "";
+    position: absolute;
+    top: 0.15em;
+    right: 1em;
+    display: block;
+    width: 17px;
+    height: 80px;
+    background: url("../images/cake_m/bg_right.jpg"); }
+#creamNum1_content .menu_sub_inpo .inpo_efc {
+  max-width: 320px;
+  margin: 0 auto; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc li:first-child {
+    float: left;
+    margin: 3em 0.5em 3em 2em; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc li:last-child {
+    float: right;
+    margin: 3.5em 2em 3em 0.5em; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc li p {
+    width: 8.3em;
+    text-align: left; }
+    #creamNum1_content .menu_sub_inpo .inpo_efc li p:first-child {
+      margin-bottom: 1em; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc li button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 3px solid #d58d3f;
+    color: #d58d3f;
+    font-family: NTSans;
+    font-size: 18px;
+    font-weight: 700;
+    margin: auto 0; }
+    #creamNum1_content .menu_sub_inpo .inpo_efc li button:hover {
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      background: #d58d3f;
+      color: #fff; }
+#creamNum1_content .menu_sub_inpo .inpo_efc2 {
+  display: none; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc2 > li p {
+    margin-bottom: 0.5em; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul {
+    max-width: 320px;
+    width: 100%;
+    margin: 2em auto 2em;
+    padding: 1em 0 1em;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa; }
+  #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 250px;
+    padding: 0.4em 0;
+    border-bottom: 1px dotted #aaa;
+    margin: 0 auto; }
+    #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul li:last-child {
+      border-bottom: none; }
+    #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul li::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul li strong {
+      float: left; }
+    #creamNum1_content .menu_sub_inpo .inpo_efc2 > ul li span {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */
