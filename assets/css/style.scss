@@ -34,13 +34,18 @@
         max-width: 425px; width: 100%; margin: 0 auto; overflow: hidden;
         .idx_h2{padding-bottom: 8%;}
         ul li{
-            display: block; position: relative;
+            display: block;
             &::after{content: ""; display: block; clear: both;}
-            &:nth-child(odd) img, &:nth-child(odd) div{float: left;}
-            &:nth-child(even) img, &:nth-child(even) div{float: right;}
-            &:nth-child(odd) div{top: 25%; left: 60%;}
-            &:nth-child(even) div{top: 20%; right: 60%; text-align: right;}
-            div{
+            &:nth-child(odd) div a{
+                img, div{float: left;}
+                div{margin-top: 12.5%; left: 60%;}
+            }
+            &:nth-child(even) div a{
+                img, div{float: right;}
+                div{margin-top: 8.5%; right: 60%; text-align: right;}
+            }
+            > div{position: relative;}
+            div a div{
                 position: absolute; width: 32%; height: inherit;
                 strong{font-size: 22px; font-weight: 500; color: #d58d3f;}
             }
@@ -122,6 +127,7 @@
             }
             .pro_menu{
                 text-align: center; font-weight: 500; padding: 0 calc(50% - (313.5px / 2));
+                li{width: 100%; height: 200px;}
                 li a{
                     &:first-child{margin-right: 0.5em;}
                     display: block; float: left; border: 1px solid #ddd; margin-bottom: 2.5em; -webkit-box-shadow: 0 3px 5px #0000001a; box-shadow: 0 3px 5px #0000001a;
@@ -182,11 +188,11 @@
             }
             .inpo_efc2{
                 display: none;
-                > li{
+                > li:first-child{
                     p{margin-bottom: 0.5em; font-size: 14px;}
                 }
-                > ul{max-width: 320px; width: 100%; margin: 2em auto 2em; padding: 1em 0 1em; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
-                > ul li{
+                > li:last-child ul{max-width: 320px; width: 100%; margin: 2em auto 2em; padding: 1em 0 1em; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
+                > li:first-child ul li{
                     @include borderBox;
                     width: 250px; padding: 0.4em 0; border-bottom: 1px dotted #aaa; margin: 0 auto;
                     &:last-child{border-bottom: none;}

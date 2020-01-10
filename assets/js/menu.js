@@ -4,9 +4,9 @@ $(document).ready(function () {
 
     $menuButton.on('click', function () {
         if ($menuButUl.hasClass('on')) {//'on' 클래스를 가지고 있을 때(열림)
-            $menuButUl.stop().slideUp().removeClass('on').parent().find($menuButton).text('안내사항');
+            $menuButUl.stop().slideUp().removeClass('on').parent().find($menuButton).text('+더보기');
         } else {
-            $menuButUl.stop().slideDown().addClass('on').parent().find($menuButton).text('접기'); //'on' 클래스를 가지지 않을 때(닫힘)
+            $menuButUl.stop().slideDown().addClass('on').parent().find($menuButton).text('-접기'); //'on' 클래스를 가지지 않을 때(닫힘)
         }
     });
 });

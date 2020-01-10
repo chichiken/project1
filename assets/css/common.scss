@@ -63,7 +63,17 @@ input[type="text"]{border: none; background: none; font-family: inherit; padding
 .clearfix::after{content: ""; display: block; clear: both;}
 .sr-only{position: absolute; top: 0; left: -9999px;}
 .c_ca1a37{color: #ca1a37 !important;}
-.fade, .fade2{opacity: 0;}
+.fade{
+    @include transition(all 0.5s);
+    opacity: 0;
+    & .fade_left, & .fade_right{@include transition(all 0.5s);}
+    & .fade_left{@include transform(translateX(30px));}
+    & .fade_right{@include transform(translateX(-30px));}
+}
+.fade.on{
+    opacity: 1;
+    & .fade_left, & .fade_right{@include transform(translateX(0px));}
+}
 .fadeInLeft{animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 .fadeInRight{animation: fadeInRight forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;}
 

@@ -90,8 +90,27 @@ input[type="text"] {
 .c_ca1a37 {
   color: #ca1a37 !important; }
 
-.fade, .fade2 {
+.fade {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   opacity: 0; }
+  .fade .fade_left, .fade .fade_right {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .fade .fade_left {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px); }
+  .fade .fade_right {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px); }
+
+.fade.on {
+  opacity: 1; }
+  .fade.on .fade_left, .fade.on .fade_right {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
 
 .fadeInLeft {
   animation: fadeInLeft forwards 1.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }

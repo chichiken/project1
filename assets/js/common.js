@@ -1,21 +1,20 @@
 $(document).ready(function () {
-    $(window).scroll(function (){
-        $('.fade').each(function (){
-            var tihsBtm = $(this).offset().top + $(this).outerHeight();
-            var winBtm = $(window).scrollTop() + $(window).height();
-            if( tihsBtm > winBtm/3 ){
-                $(this).animate({'opacity': 1}, 1000);
-            };
-        }); 
-    });
-    $(window).scroll(function (){
-        $('.fade2').each(function (){
-            var tihsBtm = $(this).offset().top + $(this).outerHeight();
-            var winBtm = $(window).scrollTop() + $(window).height();
-            if( tihsBtm > winBtm/1.3 ){
-                $(this).animate({'opacity': 1}, 1000);
-            };
-        }); 
+    var timer = 0;
+    var scrollT;
+
+    $(window).on('scroll', function () {
+        clearTimeout(timer);
+
+        timer = setTimeout(function () {
+            scrollT = $(this).scrollTop();
+            var winBtm = scrollT + $(this).height();
+
+            $('.fade').each(function () {
+                var fadeBtm = $(this).offset().top + $(this).outerHeight();
+                if (winBtm > fadeBtm) $(this).addClass('on');
+                else $(this).removeClass('on');
+            });
+        }, 50);
     });
 
     //navigator
